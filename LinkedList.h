@@ -1,6 +1,7 @@
 #ifndef LINKED_LIST_H
 #define LINKED_LIST_H
 
+
 typedef struct __Node{
 
 int value;
@@ -17,6 +18,13 @@ int length;
 
 }LinkedList;
 
+
+
+
+
+Node* ListInsert(LinkedList* list, int new_value);
+Node* ListFindNode(LinkedList* list, int value);
+Node* ListRemove(LinkedList* list, int length);
 
 
 #endif
